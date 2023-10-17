@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Beastly&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,8 +26,13 @@ body {
 .content {
     display: inline;
     font-size: 2rem;
+    font-family: "Press Start 2P";
 }
 
 .strikethrough {
+    display: inline-block;
+    font-family: "Rubik Beastly";
+    font-size: 2.5rem;
     text-decoration: line-through;
+    transform: translateY(-0.3rem);
 }
