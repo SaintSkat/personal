@@ -26,12 +26,12 @@ body {
 .content {
     display: inline;
     font-size: 2rem;
-    font-family: "Press Start 2P";
+    font-family: "Press Start 2P", serif;
 }
 
 .strikethrough {
     display: inline-block;
-    font-family: "Rubik Beastly";
+    font-family: "Rubik Beastly", serif;
     font-size: 2.5rem;
     transform: translateY(-0.3rem);
 }
@@ -44,11 +44,9 @@ body {
 }
 .strikethrough::before {
     border-bottom: 0.5rem solid rgba(255, 0, 0, 0.7);
-    -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
 }
 .strikethrough::after {
     border-bottom: 0.5rem solid rgba(255, 0, 0, 0.7);
-    -webkit-transform: skewY(10deg);
     transform: skewY(10deg);
 }
