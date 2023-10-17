@@ -9,6 +9,8 @@ body {
 }
 
 body {
+    background-image: url("images/bg.jpeg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
