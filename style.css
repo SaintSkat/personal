@@ -50,3 +50,19 @@ body {
     border-bottom: 0.5rem solid rgba(255, 0, 0, 0.7);
     transform: skewY(10deg);
 }
+
+ul {
+    list-style-type: none;
+}
+
+.contacts {
+    color: rgb(70, 70, 70);
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+.contacts a {
+    color: navy;
+    text-decoration: none;
+}
