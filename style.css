@@ -33,6 +33,22 @@ body {
     display: inline-block;
     font-family: "Rubik Beastly";
     font-size: 2.5rem;
-    text-decoration: line-through;
     transform: translateY(-0.3rem);
+}
+.strikethrough::before, .strikethrough::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.strikethrough::before {
+    border-bottom: 0.5rem solid rgba(255, 0, 0, 0.7);
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+}
+.strikethrough::after {
+    border-bottom: 0.5rem solid rgba(255, 0, 0, 0.7);
+    -webkit-transform: skewY(10deg);
+    transform: skewY(10deg);
 }
