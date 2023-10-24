@@ -9,6 +9,9 @@
 body {
     min-height: 100vh;
 }
+body.waiting * {
+    cursor: wait;
+}
 
 body {
     color: white;
@@ -65,4 +68,20 @@ ul {
     font-family: Arial, sans-serif;
     font-size: 1.35rem;
     text-decoration: none;
+}
+
+#starter {
+    cursor: not-allowed;
+}
+
+#video {
+    display: none;
+    height: 50%;
+    left: 25%;
+    position: fixed;
+    top: 25%;
+    width: 50%;
+}
+#video.play {
+    display: block;
 }
