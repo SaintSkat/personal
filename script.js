@@ -26,4 +26,18 @@ window.onload = () => {
         video.removeEventListener('pause', listener);
         video.pause();
     });
+
+    var supposedCurrentTime = 0;
+    video.addEventListener('timeupdate', function() {
+        if (!video.seeking) {
+            supposedCurrentTime = video.currentTime;
+        }
+    });
+    video.addEventListener('seeking', function() {
+        let delta = video.currentTime - supposedCurrentTime;
+        if (Math.abs(delta) > 0.01) {
+            supposedCurrentTime = 0;
+            video.currentTime = supposedCurrentTime;
+        }
+    });
 };
