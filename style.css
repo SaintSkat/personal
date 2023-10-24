@@ -55,13 +55,14 @@ ul {
 }
 
 .contacts {
-    color: rgb(70, 70, 70);
-    font-family: Arial, sans-serif;
-    font-size: 1.25rem;
+    font-family: "Press Start 2P", serif;
+    font-size: 1rem;
     margin: 0 auto;
     width: fit-content;
 }
 .contacts a {
-    color: navy;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.35rem;
     text-decoration: none;
 }
